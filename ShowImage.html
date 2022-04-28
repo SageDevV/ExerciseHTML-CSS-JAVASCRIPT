@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="gokukaioken.png" id="1">
+    <img src="gokumui.png" id="2">
+    <button onclick="hiddenallimages()">Hidden all images</button>
+    <button onclick="hiddenfirstimage()">Hidden first image</button>
+    <button onclick="hiddensecondimage()">Hidden second image</button>
+    <script>
+        function hiddenallimages(){
+            console.log('escondendo todas as imagens')
+            document.getElementById('1').style.visibility = "hidden";
+            document.getElementById('2').style.visibility = "hidden";
+        }
+        function hiddenfirstimage(){
+            console.log('escondendo a primeira imagem')
+            document.getElementById('1').style.visibility = "hidden"
+        }
+        function hiddensecondimage(){
+            console.log('escondendo a segunda imagem')
+            document.getElementById('2').style.visibility = "hidden"
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="value">0</h1>
+    <button onclick="clicknobotaoincrement()">+1</button>
+
+    <h1 id="decrement">0</h1>
+    <button onclick="clicknobotaodecrement()">-1</button>
+
+    <script>
+        console.log('Meu contador');
+        var value = 0;
+        var decrement = 0;
+
+        function clicknobotaoincrement(){
+            console.log('Aconteceu o click');
+            value++;
+            if(value >= 12){
+                window.alert('chega!');
+                value--
+            }
+            document.getElementById('value').innerText = value;  
+        }
+        function clicknobotaodecrement(){
+            console.log('Aconteceu o click');
+            decrement--;
+            document.getElementById('decrement').innerText = decrement;  
+
+        }
+    </script>
+</body>
+</html>
